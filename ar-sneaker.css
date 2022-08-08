@@ -1,0 +1,356 @@
+/* FONTS */
+@font-face {
+    font-family: "Silka";
+    src: url(./font/Silka-Regular.otf);
+    font-weight: normal;
+  }
+
+@font-face {
+    font-family: "Cyber";
+    src: url(./font/Cyber.otf);
+    font-weight: normal;
+}
+
+
+
+/* MAIN */
+body {
+    background: #F8F8F8;
+    color: rgb(49, 49, 49);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+
+/* CARD */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: rgb(13, 17, 23);
+    font-size: 3rem;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: transparent 0px 0px 0px 2px inset;
+    box-shadow: rgb(100 100 111 / 10%) 0px 0px 0px 0px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-snap-code-noshadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex;
+    color: rgb(13, 17, 23);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: transparent 0px 0px 0px 2px inset;
+    transition: box-shadow 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    box-shadow: rgb(100 100 111 / 10%) 0px 5px 24px 0px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: repeat(4, 280px);
+    grid-template-areas: 
+    "o"
+    "l"
+    "m"
+    "c";
+}
+
+.card-snap {
+    grid-area: l;
+}
+
+.card-render-1 {
+    grid-area: c;
+}
+
+.card-snap-code {
+    grid-area: m;
+}
+
+.card-render-2 {
+    grid-area: o;
+}
+
+
+
+/* LINK BUTTON */
+.rounded-button {
+    width: 18px;
+    height: 18px;
+    padding: 8px;
+    margin: 13px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.rounded-button-close {
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.icon {
+    max-height: 16px;
+    user-select: none;
+}
+
+.icon-close {
+    max-height: 26px;
+    user-select: none;
+}
+
+.card:hover .icon {
+    margin-right: 4px;
+}
+
+.card:hover .icon-close {
+    margin-right: 4px;
+}
+
+.card:hover .rounded-button {
+    height: auto;
+    width: auto;
+}
+
+.card:hover .rounded-button-close {
+    height: auto;
+    width: auto;
+}
+
+.rounded-button:hover {
+    border-radius: 60px;
+    box-shadow: 0px 0px 0px 4px rgba(201, 201, 201, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.rounded-button-close:hover {
+    border-radius: 60px;
+    box-shadow: 0px 0px 0px 4px rgba(201, 201, 201, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* SNAP BUTTON TEXT */
+.button-text-snap {
+    margin: 0px;
+    width: 0px;
+    font-size: 12px;
+    font-family: Silka, sans-serif;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    color: rgb(13, 17, 23);
+    user-select: none;
+    opacity: 0;
+    transform: translateX(-12px) translateZ(0px);
+}
+
+.card:hover .button-text-snap {
+    width: 110px;
+    opacity: 1;
+    margin: 0 6px 0 6px;
+    transform: none;
+    transition: all 0.3s;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out;
+}
+
+
+/* RESPONSIVE DESIGN (SCREEN ABOVE 450 PX) */
+@media screen and (min-width: 450px) {
+    .content {
+        margin-top: 75px;
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        gap: 1rem;
+
+        grid-template-columns: repeat(1, 360px);
+        grid-template-rows: repeat(4, 360px);
+        grid-template-areas: 
+        "o"
+        "l"
+        "m"
+        "c";
+    }
+    
+    .card-snap {
+        grid-area: l;
+    }
+    
+    .card-render-1 {
+        grid-area: c;
+    }
+    
+    .card-snap-code {
+        grid-area: m;
+    }
+    
+    .card-render-2 {
+        grid-area: o;
+    }
+
+    .rounded-button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .rounded-button-close {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 60px;
+    }
+    
+    .icon {
+        max-height: 20px;
+        user-select: none;
+    }
+
+    .icon-close {
+        max-height: 30px;
+        user-select: none;
+    }
+
+    /* SNAP BUTTON TEXT */
+    .button-text-snap {
+        font-size: 14px;
+    }
+
+    .card:hover .button-text-snap {
+        width: 128px;
+    }
+}
+
+
+
+/* RESPONSIVE DESIGN (SCREEN ABOVE 900 PX) */
+@media screen and (min-width: 900px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 95vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .grid {
+        display: grid;
+        gap: 1rem;
+    
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: repeat(2, 280px);
+        grid-template-areas: 
+        "l c c"
+        "m o o";
+    }
+    
+    .card-snap {
+        grid-area: l;
+    }
+    
+    .card-render-1 {
+        grid-area: c;
+    }
+    
+    .card-snap-code {
+        grid-area: m;
+    }
+    
+    .card-render-2 {
+        grid-area: o;
+    }
+    
+    .rounded-button {
+        width: 18px;
+        height: 18px;
+        user-select: none;
+    }
+
+    .rounded-button-close {
+        width: 36px;
+        height: 36px;
+        user-select: none;
+        margin-top: -60px;
+    }
+
+    .card:hover .rounded-button {
+        height: 18px;
+        width: auto;
+    }
+    
+    .icon {
+        max-height: 16px;
+        user-select: none;
+    }
+
+    .icon-close {
+        max-height: 30px;
+        user-select: none;
+    }
+
+    /* SNAP BUTTON TEXT */
+    .button-text-snap {
+        font-size: 12px;
+    }
+
+    .card:hover .button-text-snap {
+        width: 110px;
+    }
+}

@@ -2,11 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/images/profile-image.png">
+    <title>robrecht.eth</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    Hello world!
+    <div class="content">
+        <div class="grid">
+            <div class="card-intro card-info" style="background-image:url('./images/info.png')">
+                <img class="profile-image" src="./images/profile-image.png" />
+                <p class="intro">Hi there, I'm Robrecht! I'm interested in web3, 3D&nbsp;design, product design, and investing. Part of <a href="https://www.ycombinator.com/" target="_blank">Y&nbsp;Combinator</a> and <a href="https://pioneer.app/" target="_blank">Pioneer</a>.</p>
+            </div>
+            <div class="card card-twitter" style="background-image:url('./images/twitter.png')">
+                <a class="rounded-button" href="https://twitter.com/0xrobrecht" target=”_blank”>
+                        <p class="button-text-twitter">Twitter</p>
+                        <img class="icon" src="./images/arrow-right-up.svg" />
+                </a>
+            </div>
+            <div class="card card-loading" style="background-image:url('./images/ar-sneaker.png')">
+                <a class="rounded-button" href="ar-sneaker.html">
+                        <p class="button-text-ar-snearker">AR Sneaker</p>
+                        <img class="icon" src="./images/arrow-right-up.svg" />
+                </a>
+            </div>
+            <div class="card card-collection" style="background-image:url('./images/collection.png')">
+                <a class="rounded-button" href="https://opensea.io/collection/erc-137" target=”_blank”>
+                    <p class="button-text-collection">ERC-137 Collection</p>
+                    <img class="icon" src="./images/arrow-right-up.svg" />
+                </a>
+            </div>
+            <div class="card card-loading2" style="background-image:url('./images/email.png')">
+                <a class="rounded-button" id="border" onclick="copyToClipboard()">
+                    <img class="icon-copy" src="./images/copy.svg" />
+                </a>
+            </div>
+            <div class="card card-oncyber" style="background-image:url('./images/oncyber.png')">
+                <a class="rounded-button" href="https://oncyber.io/robrecht" target=”_blank”>
+                    <p class="button-text-oncyber">Oncyber Space</p>
+                    <img class="icon" src="./images/arrow-right-up.svg" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+

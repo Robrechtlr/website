@@ -1,0 +1,523 @@
+/* FONTS */
+@font-face {
+    font-family: "Silka";
+    src: url(./font/Silka-Regular.otf);
+    font-weight: normal;
+  }
+
+@font-face {
+    font-family: "Cyber";
+    src: url(./font/Cyber.otf);
+    font-weight: normal;
+}
+
+
+
+/* MAIN */
+body {
+    background: #F8F8F8;
+    color: rgb(49, 49, 49);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* CARD */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: rgb(13, 17, 23);
+    font-size: 3rem;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: transparent 0px 0px 0px 2px inset;
+    box-shadow: rgb(100 100 111 / 10%) 0px 0px 0px 0px;
+    transition: box-shadow 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex;
+    color: rgb(13, 17, 23);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: transparent 0px 0px 0px 2px inset;
+    transition: box-shadow 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.card:hover {
+    box-shadow: rgb(100 100 111 / 10%) 0px 5px 24px 0px;
+}
+
+
+
+/* GRID */
+.grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: repeat(6, 280px);
+    grid-template-areas: 
+    "i"
+    "c"
+    "o"
+    "l"
+    "t"
+    "m";
+}
+
+.card-info {
+    grid-area: i;
+}
+
+.card-twitter {
+    grid-area: t;
+}
+
+.card-loading {
+    grid-area: l;
+}
+
+.card-collection {
+    grid-area: c;
+}
+
+.card-loading2 {
+    grid-area: m;
+}
+
+.card-oncyber {
+    grid-area: o;
+}
+
+
+
+/* INFO CARD*/
+.profile-image {
+    height: 90px;
+    width: 90px;
+    margin: 0 0 16px 20px;
+    user-select: none;
+}
+
+.intro {
+    color: rgb(13, 17, 23);
+    font-family: Silka, sans-serif;
+    font-size: 12px;
+    margin: 0 30px 0 30px;
+    text-align: left;
+    line-height: 26px;
+    user-select: none;
+}
+
+
+
+/* LINK BUTTON */
+.rounded-button {
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    margin: 13px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.icon {
+    max-height: 16px;
+    user-select: none;
+}
+
+.icon-copy {
+    max-height: 16px;
+    user-select: none;
+}
+
+.card:hover .icon {
+    margin-right: 4px;
+}
+
+.card:hover .rounded-button {
+    height: auto;
+    width: auto;
+}
+
+.rounded-button:hover {
+    border-radius: 60px;
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* TWITTER BUTTON TEXT */
+.button-text-twitter {
+    margin: 0px;
+    width: 0px;
+    font-size: 12px;
+    font-family: Silka, sans-serif;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    color: rgb(13, 17, 23);
+    user-select: none;
+    opacity: 0;
+    transform: translateX(-12px) translateZ(0px);
+}
+
+.card:hover .button-text-twitter {
+    width: 42px;
+    opacity: 1;
+    margin: 0 6px 0 6px;
+    transform: translateX(0px) translateZ(0px);
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out;
+}
+
+/* AR SNEAKER BUTTON TEXT */
+.button-text-ar-snearker {
+    margin: 0px;
+    width: 0px;
+    font-size: 12px;
+    font-family: Silka, sans-serif;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    color: rgb(13, 17, 23);
+    user-select: none;
+    opacity: 0;
+    transform: translateX(-12px) translateZ(0px);
+}
+
+.card:hover .button-text-ar-snearker {
+    width: 66px;
+    opacity: 1;
+    margin: 0 6px 0 6px;
+    transform: none;
+    transition: all 0.3s;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out;
+}
+
+/* ERC-137 COLLECTION BUTTON TEXT */
+.button-text-collection {
+    margin: 0px;
+    width: 0px;
+    font-size: 12px;
+    font-family: Silka, sans-serif;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    color: rgb(13, 17, 23);
+    user-select: none;
+    opacity: 0;
+    transform: translateX(-12px) translateZ(0px);
+}
+
+.card:hover .button-text-collection {
+    width: 118px;
+    opacity: 1;
+    margin: 0 6px 0 6px;
+    transform: none;
+    transition: all 0.3s;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out;
+}
+
+/* ONCYBER BUTTON TEXT */
+.button-text-oncyber {
+    margin: 0px;
+    width: 0px;
+    font-size: 12px;
+    font-family: Silka, sans-serif;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    color: rgb(13, 17, 23);
+    user-select: none;
+    opacity: 0;
+    transform: translateX(-12px) translateZ(0px);
+}
+
+.card:hover .button-text-oncyber {
+    width: 94px;
+    opacity: 1;
+    margin: 0 6px 0 6px;
+    transform: none;
+    transition: all 0.3s;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out;
+}
+
+
+
+/* RESPONSIVE DESIGN (SCREEN ABOVE 450 PX) */
+@media screen and (min-width: 450px) {
+    .content {
+        margin-top: 75px;
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        gap: 1rem;
+
+        grid-template-columns: repeat(1, 360px);
+        grid-template-rows: repeat(6, 360px);
+        grid-template-areas: 
+        "i"
+        "c"
+        "o"
+        "l"
+        "t"
+        "m";
+    }
+
+    .card-info {
+        grid-area: i;
+    }
+
+    .card-twitter {
+        grid-area: t;
+    }
+    
+    .card-loading {
+        grid-area: l;
+    }
+    
+    .card-collection {
+        grid-area: c;
+    }
+    
+    .card-loading2 {
+        grid-area: m;
+    }
+    
+    .card-oncyber {
+        grid-area: o;
+    }
+
+    .profile-image {
+        height: 120px;
+        width: 120px;
+        margin: 0 0 16px 40px;
+    }
+    
+    .intro {
+        color: rgb(13, 17, 23);
+        font-family: Silka, sans-serif;
+        font-size: 16px;
+        margin: 0 50px 0 50px;
+        text-align: left;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+    }
+    
+    .name {
+        font-size: 24px;
+        font-family: cyber, sans-serif;
+    }
+
+    .rounded-button {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .icon {
+        max-height: 20px;
+        user-select: none;
+    }
+
+    .icon-copy {
+        max-height: 20px;
+        user-select: none;
+    }
+
+    /* TWITTER BUTTON TEXT */
+    .button-text-twitter {
+        font-size: 14px;
+    }
+
+    .card:hover .button-text-twitter {
+        width: 48px;
+    }
+
+    /* AR SNEAKER BUTTON TEXT */
+    .button-text-ar-snearker {
+        font-size: 14px;
+    }
+
+    .card:hover .button-text-ar-snearker {
+        width: 78px;
+    }
+
+    /* ERC-137 COLLECTION BUTTON TEXT */
+    .button-text-collection {
+        font-size: 14px;
+    }
+
+    .card:hover .button-text-collection {
+        width: 134px;
+    }
+
+    /* ONCYBER BUTTON TEXT */
+    .button-text-oncyber {
+        font-size: 14px;
+    }
+
+    .card:hover .button-text-oncyber {
+        width: 110px;
+    }
+}
+
+
+
+/* RESPONSIVE DESIGN (SCREEN ABOVE 900 PX) */
+@media screen and (min-width: 900px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 95vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .grid {
+        display: grid;
+        gap: 1rem;
+    
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: repeat(3, 280px);
+        grid-template-areas: 
+        "i i t"
+        "l c c"
+        "m o o";
+    }
+
+    .card-info {
+        grid-area: i;
+    }
+
+    .card-twitter {
+        grid-area: t;
+    }
+    
+    .card-loading {
+        grid-area: l;
+    }
+    
+    .card-collection {
+        grid-area: c;
+    }
+    
+    .card-loading2 {
+        grid-area: m;
+    }
+    
+    .card-oncyber {
+        grid-area: o;
+    }
+
+    .profile-image {
+        height: 100px;
+        width: 100px;
+        margin: 0 0 16px 30px;
+    }
+    
+    .intro {
+        color: rgb(13, 17, 23);
+        font-family: Silka, sans-serif;
+        font-size: 14px;
+        margin: 0 36px 0 36px;
+        text-align: left;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        user-select: none;
+    }
+    
+    .rounded-button {
+        width: 18px;
+        height: 18px;
+        user-select: none;
+    }
+
+    .card:hover .rounded-button {
+        height: 18px;
+        width: auto;
+    }
+    
+    .icon {
+        max-height: 16px;
+        user-select: none;
+    }
+
+    .icon-copy {
+        max-height: 18px;
+        user-select: none;
+    }
+
+    /* TWITTER BUTTON TEXT */
+    .button-text-twitter {
+        font-size: 12px;
+    }
+
+    .card:hover .button-text-twitter {
+        width: 42px;
+    }
+
+    /* AR SNEAKER BUTTON TEXT */
+    .button-text-ar-snearker {
+        font-size: 12px;
+    }
+
+    .card:hover .button-text-ar-snearker {
+        width: 68px;
+    }
+
+    /* ERC-137 COLLECTION BUTTON TEXT */
+    .button-text-collection {
+        font-size: 12px;
+    }
+
+    .card:hover .button-text-collection {
+        width: 118px;
+    }
+
+    /* ONCYBER BUTTON TEXT */
+    .button-text-oncyber {
+        font-size: 12px;
+    }
+
+    .card:hover .button-text-oncyber {
+        width: 94px;
+    }
+}
