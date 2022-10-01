@@ -25,6 +25,7 @@
         margin-bottom: 50px;
         margin-left: 5%;
         margin-right: 5%;
+        max-width: 765px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -117,7 +118,6 @@
 
     .image {
         width: 90%;
-        height: auto;
     }
 
 }
@@ -143,7 +143,6 @@
 
     .image {
         width: 90%;
-        height: auto;
     }
 
 }
@@ -170,7 +169,6 @@
 
     .image {
         width: 80%;
-        height: auto;
     }
     
 }
