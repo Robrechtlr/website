@@ -81,26 +81,22 @@ body {
     display: grid;
     gap: 1rem;
 
-    grid-template-columns: repeat(1, 280px);
-    grid-template-rows: repeat(6, 280px);
+    grid-template-columns: repeat(1, 320px);
+    grid-template-rows: repeat(6, 320px);
     grid-template-areas: 
     "i"
+    "l"
     "c"
     "o"
-    "l"
-    "t"
-    "m";
+    "m"
+    "t";
 }
 
 .card-info {
     grid-area: i;
 }
 
-.card-twitter {
-    grid-area: t;
-}
-
-.card-loading {
+.card-soulbind {
     grid-area: l;
 }
 
@@ -108,13 +104,18 @@ body {
     grid-area: c;
 }
 
-.card-loading2 {
-    grid-area: m;
-}
-
 .card-oncyber {
     grid-area: o;
 }
+
+.card-arsneaker {
+    grid-area: m;
+}
+
+.card-twitter {
+    grid-area: t;
+}
+
 
 
 
@@ -129,7 +130,7 @@ body {
 .intro {
     color: rgb(13, 17, 23);
     font-family: Silka, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 30px 0 30px;
     text-align: left;
     line-height: 26px;
@@ -197,6 +198,28 @@ body {
 
 .card:hover .button-text-twitter {
     width: 42px;
+    opacity: 1;
+    margin: 0 6px 0 6px;
+    transform: translateX(0px) translateZ(0px);
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out;
+}
+
+/* SOULBIND BUTTON TEXT */
+.button-text-soulbind {
+    margin: 0px;
+    width: 0px;
+    font-size: 12px;
+    font-family: Silka, sans-serif;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    color: rgb(13, 17, 23);
+    user-select: none;
+    opacity: 0;
+    transform: translateX(-12px) translateZ(0px);
+}
+
+.card:hover .button-text-soulbind {
+    width: 50px;
     opacity: 1;
     margin: 0 6px 0 6px;
     transform: translateX(0px) translateZ(0px);
@@ -293,22 +316,18 @@ body {
         grid-template-rows: repeat(6, 360px);
         grid-template-areas: 
         "i"
+        "l"
         "c"
         "o"
-        "l"
-        "t"
-        "m";
+        "m"
+        "t";
     }
 
     .card-info {
         grid-area: i;
     }
-
-    .card-twitter {
-        grid-area: t;
-    }
     
-    .card-loading {
+    .card-soulbind {
         grid-area: l;
     }
     
@@ -316,12 +335,16 @@ body {
         grid-area: c;
     }
     
-    .card-loading2 {
-        grid-area: m;
-    }
-    
     .card-oncyber {
         grid-area: o;
+    }
+
+    .card-arsneaker {
+        grid-area: m;
+    }
+
+    .card-twitter {
+        grid-area: t;
     }
 
     .profile-image {
@@ -367,6 +390,15 @@ body {
 
     .card:hover .button-text-twitter {
         width: 48px;
+    }
+
+    /* SOULBIND BUTTON TEXT */
+    .button-text-soulbind {
+        font-size: 14px;
+    }
+
+    .card:hover .button-text-soulbind {
+        width: 58px;
     }
 
     /* AR SNEAKER BUTTON TEXT */
@@ -418,7 +450,7 @@ body {
         grid-template-columns: repeat(3, 280px);
         grid-template-rows: repeat(3, 280px);
         grid-template-areas: 
-        "i i t"
+        "i i g"
         "l c c"
         "m o o";
     }
@@ -427,11 +459,11 @@ body {
         grid-area: i;
     }
 
-    .card-twitter {
-        grid-area: t;
+    .card-soulbind {
+        grid-area: g;
     }
     
-    .card-loading {
+    .card-arsneaker {
         grid-area: l;
     }
     
@@ -439,7 +471,7 @@ body {
         grid-area: c;
     }
     
-    .card-loading2 {
+    .card-twitter {
         grid-area: m;
     }
     
@@ -492,6 +524,15 @@ body {
 
     .card:hover .button-text-twitter {
         width: 42px;
+    }
+
+    /* SOULBIND BUTTON TEXT */
+    .button-text-soulbind {
+        font-size: 12px;
+    }
+
+    .card:hover .button-text-soulbind {
+        width: 52px;
     }
 
     /* AR SNEAKER BUTTON TEXT */
