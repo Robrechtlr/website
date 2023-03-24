@@ -47,7 +47,11 @@
     }
 
     mark {
-        background-color: #00E100;
+        background-color: #5BFF09;
+    }
+
+    ::selection {
+        background: #5BFF09;
     }
 
 
