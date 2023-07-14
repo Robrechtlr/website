@@ -15,7 +15,6 @@
 
     /* MAIN */
     body {
-        background: #F8F8F8;
         color: rgb(49, 49, 49);
         font-family: Silka, sans-serif;
     }
@@ -69,6 +68,7 @@
         text-decoration: none;
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+        background-color: #F8F8F8;
     }
 
     .icon-close {
