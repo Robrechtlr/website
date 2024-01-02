@@ -225,7 +225,7 @@ body {
 }
 
 .card:hover .button-text-twitter {
-    width: 66px;
+    width: 62px;
     opacity: 1;
     margin: 0 6px 0 6px;
     transform: translateX(0px) translateZ(0px);
