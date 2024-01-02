@@ -225,7 +225,7 @@ body {
 }
 
 .card:hover .button-text-twitter {
-    width: 42px;
+    width: 56px;
     opacity: 1;
     margin: 0 6px 0 6px;
     transform: translateX(0px) translateZ(0px);
@@ -422,7 +422,7 @@ body {
     }
 
     .card:hover .button-text-twitter {
-        width: 48px;
+        width: 66px;
     }
 
     /* SOULBIND BUTTON TEXT */
@@ -568,7 +568,7 @@ body {
     }
 
     .card:hover .button-text-twitter {
-        width: 42px;
+        width: 56px;
     }
 
     /* SOULBIND BUTTON TEXT */
